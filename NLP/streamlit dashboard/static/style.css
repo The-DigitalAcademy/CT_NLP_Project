@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+color: #333;
+}
+
+.special {
+color: rgb(14, 220, 24);
+}
+
+form {
+display: inline-block;
+margin-top: 50px;
+text-align: left;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin-top: 20px;
+border: none;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #3e8e41;
+}

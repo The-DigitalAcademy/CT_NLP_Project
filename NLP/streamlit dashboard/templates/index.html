@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Model Prediction App</title>
+  </head>
+  <body>
+    <h1>Model Prediction</h1>
+    <form method="post" action="{{ url_for('predict') }}">
+      <label for="text">Enter your text:</label><br>
+      <input type="text" id="text" name="text"><br><br>
+      <input type="submit" value="Predict">
+    </form>
+    {% if prediction is not none %}
+    <p>The model predicts that the input text is {{ prediction }}.</p>
+    {% endif %}
+  </body>
+</html>
